@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loginbutton {
+  grid-column: 4/5;
+}
+
+.loginbutton ul {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.menu-link ul li a {
+  color: black;
+  font-family: "Markazi Text";
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.menu-link ul li a:hover {
+  border-bottom: solid 3px #f4ce14;
+  transition: 0.2s linear;
+}
+
+.loginbutton li a {
+  color: black;
+  font-family: "Markazi Text";
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding: 2px 13px;
+  background-color: rgb(244, 206, 20, 0.7);
+  border-radius: 16px;
+}
+
+.loginbutton li a:hover {
+  border-bottom: solid 3px #f4ce14;
+  transition: 0.2s;
+}
+
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
+  }
+
+  .logo,
+  .menu-link ul,
+  .loginbutton ul {
+    height: 8rem;
+  }
+}
+
+
+@media (max-width: 998px) {
+  .main-nav{
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 4rem;
+  }
+
+  .menu-link{
+    display: none;
+  }
+
+  .logo,
+  .loginbutton ul{
+    height: 7rem;
+  }
+
+  .mobile-menu-link{
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-menu-link{
+    background-color: rgb(244, 206, 20, .9);
+    height: 25rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 1.5s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul{
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul:first-child{
+    transition: .3s;
+  }
+
+  .loginbutton{
+    grid-row: 1/2;
+    grid-column: 3/5;
+    align-items: center;
+    transition: all 1.5s linear;
+  }
+
+  .loginbutton {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .hamburger-menu{
+    display: block;
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .main-nav{
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .loginbutton ul{
+    height: 6rem;
+  }
+
+  .loginbutton a img{
+    width: 2.5rem;
+  }
+
+  .loginbutton{
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .hamburger-menu{
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-nav{
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .loginbutton{
+    height: 6rem;
+  }
+
+  .logo img{
+    width: 13rem;
+  }
+
+  .loginbutton{
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .loginbutton ul li a{
+    font-size: 2rem;
+    position: relative;
+    left: 2.3rem;
+  }
+
+  .hamburger-menu a img{
+    width: 2rem;
+  }
+}

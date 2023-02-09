@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react"
+import "../styles/nav.css"
 
 const Nav = () => {
+    const [showMediaIcons, setShowMediaIcons] = useState(false)
     return (
-        <>
-            <img src={require("../assets/Logo.png")} alt="" />
-            <nav>
+        <nav className="main-nav">
+            <div className="logo">
+                <img src={require("../assets/Logo.png")} alt="" />
+            </div>
+            <div className={
+                showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+            }>
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -19,14 +25,23 @@ const Nav = () => {
                         <a href="#">Reservations</a>
                     </li>
                     <li>
-                        <a href="#">Order Online</a>
+                        <a href="#">Order</a>
                     </li>
+                </ul>
+            </div>
+            <div className="loginbutton">
+                <ul>
                     <li>
                         <a href="#">Login</a>
                     </li>
                 </ul>
-            </nav>
-        </>
+                <div className="hamburger-menu">
+                    <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                        <img src={require("../assets/menu-hamburger.png")} alt="" />
+                    </a>
+                </div>
+            </div>
+        </nav>
     )
 }
 
