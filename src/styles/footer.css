@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+footer{
+    width: 100%;
+    background-color: #495e57;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 10rem 3fr 2fr 2fr 2fr 10rem;
+}
+
+.footer-logo{
+    grid-column: 2/3;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer-logo img{
+    height: 15rem;
+}
+
+.footer-links{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+}
+
+a:hover{
+    border-bottom: solid 2px white;
+}
+
+h2{
+    color: white;
+    font-family: "Markazi Text";
+    font-size: 2.5rem;
+}
+
+a,
+p{
+    color: white;
+    font-family: "Karla";
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1080px){
+    footer{
+        grid-template-columns: 8rem 1fr 2fr 2fr 2fr 8rem;
+    }
+}
+
+@media (max-width: 998px) {
+    footer{
+        grid-template-columns: 5rem 1fr 2fr 2fr 2fr 5rem;
+    }
+}
+
+@media (max-width: 798px) {
+    footer{
+        height: 50rem;
+        display: grid;
+        grid-template-rows: 4rem 2fr 4rem 2fr 4rem;
+        grid-template-columns: 3rem 1fr 2fr 2fr 3rem;
+    }
+
+    .footer-logo{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #nav{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #contact{
+        grid-row: 2/3;
+        grid-column: 4/5;
+    }
+
+    #connect{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+}
+
+@media (max-width: 520px) {
+    footer{
+        height: 86rem;
+        display: grid;
+        grid-template-rows: 2rem 2fr .1rem 2fr .1rem 2fr .1rem 2fr 2rem;
+        grid-template-columns: 4rem 4fr 4rem;
+    }
+
+    .footer-logo{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+
+    #nav{
+        grid-row: 4/5;
+        grid-column: 2/3;
+        justify-content: left;
+    }
+
+    #contact{
+        grid-row: 6/7;
+        grid-column: 2/3;
+        justify-content: left;
+    }
+
+    #connect{
+        grid-row: 8/9;
+        grid-column: 2/3;
+        justify-content: left;
+    }
+}
