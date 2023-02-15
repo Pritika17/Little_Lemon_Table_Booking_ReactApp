@@ -61,6 +61,7 @@ li {
 }
 
 .menu-link ul li a {
+  display: inline-block;
   color: black;
   font-family: "Markazi Text";
   font-size: 2.3rem;
@@ -68,11 +69,13 @@ li {
 }
 
 .menu-link ul li a:hover {
+  scale: 1.05;
   border-bottom: solid 3px #f4ce14;
   transition: 0.2s linear;
 }
 
 .loginbutton li a {
+  display: inline-block;
   color: black;
   font-family: "Markazi Text";
   font-size: 2.3rem;
@@ -86,6 +89,7 @@ li {
   box-shadow: 0 0.5em 0.5em -0.4em rgb(243, 225, 33);
   transform: translateY(-0.25em);
   transition: .3s;
+  scale: 1.05;
 }
 
 @media (max-width: 1080px) {

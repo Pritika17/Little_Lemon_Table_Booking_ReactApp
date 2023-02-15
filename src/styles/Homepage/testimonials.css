@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.testimonials article h1{
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 4rem;
+  font-family: "Markazi Text";
+}
+
+.testimonials-cards{
+    height: 50rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr 10rem;
+    grid-template-rows: 2rem 1fr 2rem 1fr 5rem;
+}
+
+.testimonials-cards .T-first-card{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.testimonials-cards .T-second-card{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.testimonials-cards .T-third-card{
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+
+.testimonials-cards .T-fourth-card{
+    grid-column: 8/9;
+    grid-row: 2/3;
+}
+
+.testimonials-cards .T-fifth-card{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.testimonials-cards .T-sixth-card{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.testimonials-cards .T-seventh-card{
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+
+.testimonials-cards .T-eighth-card{
+    grid-row: 4/5;
+    grid-column: 8/9;
+}
+
+.testimonial-card{
+    background-color: #edefee;
+    width: 23rem;
+    height: 19rem;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.5);
+}
+
+.testimonial-card h3{
+    margin-top: 1.3rem;
+    font-family: "Markazi Text";
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.testimonial-card p{
+    color: black;
+    font-family: "Karla";
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}

@@ -12,3 +12,163 @@ html {
   font-size: 62.5%;
 }
 
+.special-head {
+  height: 18rem;
+  margin-left: 10rem;
+}
+
+.special-head h1 {
+  padding-top: 3rem;
+  font-family: "Markazi Text";
+  font-size: 4rem;
+}
+
+.special-head .online-menu {
+  display: inline-block;
+  color: black;
+  background-color: #f4ce14;
+  border: none;
+  font-family: "Karla";
+  font-size: 2.3rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.special-head .online-menu:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f4ce14;
+  transform: translateY(-0.25em);
+  transition: 0.3s;
+}
+
+.cards-special {
+  height: 55rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 3rem 1fr 3rem 1fr 10rem;
+}
+
+.cards-special .first-card {
+  grid-column: 2/3;
+}
+
+.cards-special .second-card {
+  grid-column: 4/5;
+}
+
+.cards-special .third-card {
+  grid-column: 6/7;
+}
+
+.menu-card {
+  background-color: #edefee;
+  width: 32rem;
+  height: 50rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  scale: 1.09;
+}
+
+.menu-card img {
+  width: 32rem;
+  height: 25rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.menu-card-content {
+  width: 32rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.menu-card-content h1 {
+  font-size: 3rem;
+  font-family: "Markazi Text";
+}
+
+.menu-card-content h3 {
+  font-family: "Markazi Text";
+  font-size: 2.5rem;
+}
+
+.menu-card-content p {
+  color: black;
+  font-family: "Karla";
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.menu-card-content button {
+  margin-top: 2rem;
+  color: black;
+  background-color: #f4ce14;
+  border: none;
+  font-family: "Markazi Text";
+  font-size: 2.3rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-card-content button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f5cd03;
+  transform: translateY(-0.25em);
+  transition: 0.3s;
+}
+
+.specials-carousel{
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .cards-special{
+        grid-template-columns: 6rem 1fr 2rem 1fr 2rem 1fr 6rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .cards-special{
+        grid-template-columns: 4rem 1fr 2rem 1fr 2rem 1fr 4rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    .menu-card{
+        width: 28rem;
+    }
+
+    .menu-card img{
+        width: 28rem;
+    }
+
+    .menu-card-content p{
+        width: 27rem;
+    }
+}
+
+@media (max-width: 986px) {
+    .cards-special{
+        display: none;
+    }
+    
+    .specials-carousel{
+        display: block;
+    }
+}
