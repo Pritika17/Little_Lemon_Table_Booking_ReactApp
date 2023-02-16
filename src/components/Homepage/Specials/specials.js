@@ -4,6 +4,7 @@ import Bruchetta from "../../../assets/bruchetta.png"
 import greeksalad from "../../../assets/greek-salad.jpg"
 import lemondesert from "../../../assets/lemon-desert.jpg"
 import "../../../styles/Homepage/special.css"
+import SpecialCarausel from "./specials-carousel";
 
 
 const Specials = () => {
@@ -25,9 +26,9 @@ const Specials = () => {
                     <SpecialCard className="third" image={lemondesert} name="Lemon Dessert" price="$8.50" description="Fresh baked lemon bread coated in salt and sugar. Powdered in citrus and lemon zest." />
                 </div>
             </section>
-            {/* <section className="specials-carousel">
-                <Slider/>
-            </section> */}
+            <section className="specials-carousel">
+                <SpecialCarausel/>
+            </section>
         </section>
     )
 }

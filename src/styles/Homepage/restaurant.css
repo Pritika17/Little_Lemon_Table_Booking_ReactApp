@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.restaurant{
+    width: 100%;
+    height: 40rem;
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: 10rem 2fr 1fr 10rem;
+}
+
+.about-restaurant{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 7rem;
+}
+
+.double-img{
+    grid-column: 3/4;
+    padding-top: 4rem;
+    position: relative;
+    right: 10rem;
+
+}
+
+.double-img img{
+    width: 33rem;
+    height: 22rem;
+}
+
+.double-img .food2{
+    position: relative;
+    bottom: 12rem;
+    left: 10rem;
+}
+
+.about-restaurant h1{
+    font-family: "Markazi Text";
+    font-size: 4.5rem;
+    line-height: 3.4rem;
+}
+
+.about-restaurant h2{
+    color: black;
+    font-family: "Markazi Text";
+    font-size: 3.5rem;
+}
+
+.about-restaurant p{
+    color: black;
+    font-family: "Karla";
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.about-restaurant p{
+    width: 45rem;
+}
