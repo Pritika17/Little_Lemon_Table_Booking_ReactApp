@@ -2,71 +2,125 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-.restaurant{
-    width: 100%;
-    height: 40rem;
-    background-color: #f4ce14;
-    display: grid;
-    grid-template-columns: 10rem 2fr 1fr 10rem;
+.restaurant {
+  width: 100%;
+  height: 40rem;
+  background-color: #f4ce14;
+  display: grid;
+  grid-template-columns: 10rem 2fr 1fr 10rem;
 }
 
-.about-restaurant{
-    grid-column: 2/3;
+.about-restaurant {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 7rem;
+}
+
+.double-img {
+  grid-column: 3/4;
+  padding-top: 4rem;
+  position: relative;
+  right: 10rem;
+}
+
+.double-img img {
+  width: 33rem;
+  height: 22rem;
+}
+
+.double-img .food2 {
+  position: relative;
+  bottom: 12rem;
+  left: 10rem;
+}
+
+.about-restaurant h1 {
+  font-family: "Markazi Text";
+  font-size: 4.5rem;
+  line-height: 3.4rem;
+}
+
+.about-restaurant h2 {
+  color: black;
+  font-family: "Markazi Text";
+  font-size: 3.5rem;
+}
+
+.about-restaurant p {
+  color: black;
+  font-family: "Karla";
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.about-restaurant p {
+  width: 45rem;
+}
+
+@media (max-width: 1200px) {
+  .restaurant {
+    grid-template-columns: 6rem 2fr 1fr 6rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .restaurant {
+    grid-template-columns: 4rem 2fr 1fr 4rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .about-restaurant p {
+    width: 40rem;
+  }
+
+  .double-img {
+    padding-top: 6rem;
+  }
+
+  .double-img img {
+    width: 28rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .double-img {
+    display: none;
+  }
+
+  .restaurant {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding-top: 7rem;
-}
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
 
-.double-img{
-    grid-column: 3/4;
-    padding-top: 4rem;
-    position: relative;
-    right: 10rem;
+  .about-restaurant {
+    text-align: center;
+    align-items: center;
+  }
 
-}
-
-.double-img img{
-    width: 33rem;
-    height: 22rem;
-}
-
-.double-img .food2{
-    position: relative;
-    bottom: 12rem;
-    left: 10rem;
-}
-
-.about-restaurant h1{
-    font-family: "Markazi Text";
-    font-size: 4.5rem;
-    line-height: 3.4rem;
-}
-
-.about-restaurant h2{
-    color: black;
-    font-family: "Markazi Text";
-    font-size: 3.5rem;
-}
-
-.about-restaurant p{
-    color: black;
-    font-family: "Karla";
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    font-weight: 700;
-}
-
-.about-restaurant p{
-    width: 45rem;
+  .about-restaurant p {
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
