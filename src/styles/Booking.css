@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bookings-sect {
+  background-image: url("../assets/lemon-back.jpg");
+  background-size: 140%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-family: "Markazi Text";
+  font-size: 3.5rem;
+}
+
+.form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  background: hsla(0, 0%, 100%, 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 2rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2rem 2fr 5rem 2fr 2rem;
+  grid-template-rows: 2rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 2rem;
+}
+
+.name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.email {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.phoneNumber {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.people {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+.date {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.time {
+  grid-column: 4/5;
+  grid-row: 6/7;
+}
+
+.occasion {
+  grid-column: 2/3;
+  grid-row: 8/9;
+}
+
+.seating {
+  grid-column: 4/5;
+  grid-row: 8/9;
+}
+
+.btn {
+  grid-column: 2/3;
+  grid-row: 10/11;
+}
+
+.reserve-btn {
+  height: 5rem;
+  width: 20rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #495e57;
+  color: white;
+  border: solid white 4px;
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.reserve-btn:hover {
+  box-shadow: 0 0.9em 0.9em -0.4em #495e57;
+  transform: translateY(-0.3em);
+  transition: 0.3s;
+  background-color: transparent;
+  color: black;
+  border: solid black 4px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form div input,
+select {
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 1rem;
+  border-radius: 7px;
+  padding: 5px;
+  border: solid transparent;
+  font-family: "Karla";
+}
+
+.form div label {
+  font-family: "Karla";
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 675px) {
+  .form {
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .bookings-sect {
+    height: auto;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 565px) {
+  .form{
+    grid-template-columns: 2rem 2fr 2rem 2fr 2rem;
+  }
+
+  .form div input, select{
+    width: 15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form{
+    width: fit-content;
+    display: block;
+    justify-self: center;
+    padding: 4rem;
+  }
+
+  .form div{
+    margin-bottom: 2rem;
+  }
+
+  .form div label{
+    font-weight: 800;
+    margin-bottom: .3rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .form{
+    padding: 1rem;
+  }
+}

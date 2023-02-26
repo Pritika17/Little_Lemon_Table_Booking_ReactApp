@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Homepage/about.css"
+import { Link } from "react-router-dom";
 
 const About = () => {
     return (
@@ -8,7 +9,11 @@ const About = () => {
                 <h1>Little Lemon</h1>
                 <h1>Chicago</h1>
                 <p>We are a family owned Mediterranean restaurant, located on Maldove Street in Chaicago, Illionis. We focus on traditional recipes served with a modern twist.</p>
-                <button className="reserve">Reserve a table</button>
+                <Link to="/reservations">
+                    <button className="reserve">
+                        Reserve a table
+                    </button>
+                </Link>
             </section>
             <section className="image">
                 <img src={require("../../assets/about.jpg")} alt="" />

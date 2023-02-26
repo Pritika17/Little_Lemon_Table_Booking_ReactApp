@@ -1,12 +1,16 @@
 import React, { useState } from "react"
 import "../styles/nav.css"
+import { Link } from "react-router-dom"
+import Routing from "./Routing"
 
 const Nav = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false)
     return (
         <nav className="main-nav">
             <div className="logo">
-                <img src={require("../assets/Logo.png")} alt="" />
+                <Link to="/">
+                    <img src={require("../assets/Logo.png")} alt="" />
+                </Link>
             </div>
             <div className={
                 showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"

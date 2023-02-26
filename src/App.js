@@ -2,14 +2,14 @@ import './App.css';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import Main from './components/Main';
+import Routing from './components/Routing';
 
 function App() {
   return (
     <>
-      <Nav/>
-      <Main/>
-      <Footer/>
+      <Nav />
+      <Routing />
+      <Footer />
     </>
   );
 }
