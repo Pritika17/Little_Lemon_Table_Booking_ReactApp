@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "../styles/nav.css"
 import { Link } from "react-router-dom"
-import Routing from "./Routing"
 
 const Nav = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false)
@@ -16,12 +15,16 @@ const Nav = () => {
                 showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
             }>
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
+                    <Link to="/">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                    </Link>
+                    <Link to="/about">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                    </Link>
                     <li>
                         <a href="#">Menu</a>
                     </li>
