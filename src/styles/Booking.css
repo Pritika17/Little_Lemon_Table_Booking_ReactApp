@@ -12,6 +12,10 @@ html {
   font-size: 62.5%;
 }
 
+span{
+  color: red;
+}
+
 .bookings-sect {
   background-image: url("../assets/lemon-back.jpg");
   background-size: 140%;
@@ -90,12 +94,9 @@ html {
   grid-row: 8/9;
 }
 
-.btn {
+.reserve-btn {
   grid-column: 2/3;
   grid-row: 10/11;
-}
-
-.reserve-btn {
   height: 5rem;
   width: 20rem;
   border-radius: 10px;
