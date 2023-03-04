@@ -11,7 +11,7 @@ const Booking = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/")
+    navigate("/reserved")
   }
 
   return (
@@ -97,7 +97,6 @@ const Booking = () => {
               type="number"
               id="people"
               name="people"
-              required
               {...register(
                 "people",
                 {
@@ -120,7 +119,6 @@ const Booking = () => {
               type="date"
               id="date"
               name="date"
-              required
               {...register(
                 "date",
                 {
