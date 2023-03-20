@@ -25,6 +25,11 @@ li {
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;;
 }
 
 .logo {
@@ -138,6 +143,7 @@ li {
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: sticky;
   }
 
   .mobile-menu-link ul{
@@ -169,6 +175,7 @@ li {
   .hamburger-menu{
     display: block;
     margin-left: 4rem;
+    z-index: 3;
   }
 }
 

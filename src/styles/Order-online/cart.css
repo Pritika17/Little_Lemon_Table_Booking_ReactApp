@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+.cart-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 9rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 18rem;
+  background-color: white;
+}
+
+.order-online {
+  display: flex;
+  gap: 3rem;
+  grid-column: 2/3;
+  align-items: center;
+  border-bottom: solid 2px #f4ce14;
+}
+
+.order-online h1{
+  cursor: pointer;
+}
+
+.cart-icon {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: solid 2px #f4ce14;
+  margin-top: .5rem;
+}
+
+.cart-icon img {
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.cart-icon p {
+  align-self: flex-start;
+  background-color: #495e57;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  position: relative;
+  right: 2rem;
+  color: white;
+}
+
+.cards .img-box img {
+  width: 420px;
+  height: 350px;
+  border-radius: 2rem;
+}
+
+.main-cart-section {
+  margin: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.cards {
+  margin-bottom: 5rem;
+  margin-right: 9rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.details {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details .price-btn {
+  display: flex;
+  gap: 10rem;
+  height: 6rem;
+  align-items: center;
+}
+
+.details h2,
+.details p {
+  color: black;
+  margin-top: 1rem;
+}
+
+.details h2 {
+  font-family: "Markazi Text";
+  font-size: 3rem;
+  border-bottom: solid 2px #f4ce14;
+}
+
+.details p {
+  font-family: "Karla";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.price-btn p {
+  font-family: "Karla";
+  font-size: 2rem;
+}
+
+.price-btn button {
+  background-color: #f4ce14;
+  border: none;
+  font-family: "Karla";
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.price-btn button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #f4ce14;
+  transform: translateY(-0.25em);
+  scale: 1.04;
+  transition: 0.3s;
+}
+
+.warning{
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid white 2px;
+  background-color: #495e57;
+  color: white;
+  font-family: "Karla";
+  font-size: 2.2rem;
+  margin: 2rem;
+  position: sticky;
+  top: 12rem;
+  left: 98rem;
+  z-index: 2;
+}
+
+.confirm{
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid black 2px;
+  background-color: #f4ce14;
+  color: black;
+  font-family: "Karla";
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 2rem;
+  position: sticky;
+  top: 12rem;
+  left: 98rem;
+  z-index: 2;
+}
+
+.cartItems{
+  width: 50%;
+  margin: auto;
+}
+
+.cart-box img{
+  width: 150px;
+  height: 120px;
+  box-shadow: rgba(99, 99, 99, .2) 1px 12px 10px 10px;
+  border: #f4ce14 2px solid;
+  border-radius: 2rem;
+}
+
+.cart-img{
+  display: flex;
+  width: 320px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cart-img p{
+  color: black;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 1.7rem;
+}
+
+.cart-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 3px solid #f4ce14;
+  padding-bottom: 15px;
+}
+
+.qtyControls button{
+  padding: 7px 12px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #495e57;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+}
+
+.otherControls button{
+  padding: 5px 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #495e57;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Karla";
+}
+
+.otherControls button:hover{
+  background-color: #f4ce14;
+  color: black;
+  transition: .3s;
+}
+
+.otherControls span{
+  background-color: #f4ce14;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalPrice span{
+  font-size: 3.5rem;
+  font-family: "Markazi Text";
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #495e57;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

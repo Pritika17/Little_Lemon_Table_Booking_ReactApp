@@ -31,9 +31,11 @@ const Nav = () => {
                     <li>
                         <a href="#">Reservations</a>
                     </li>
-                    <li>
-                        <a href="#">Order</a>
-                    </li>
+                    <Link to="/order-online">
+                        <li>
+                            <a href="#">Order</a>
+                        </li>
+                    </Link>
                 </ul>
             </div>
             <div className="loginbutton">

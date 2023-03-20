@@ -3,6 +3,7 @@ import Main from "./Main";
 import Booking from "./OtherPages/Bookings";
 import AboutPage from "./OtherPages/about-page";
 import Confirmation from "./OtherPages/confirmation";
+import Order from "./OtherPages/Order-online/order-online-page";
 
 const Routing = () => {
     return (
@@ -13,7 +14,9 @@ const Routing = () => {
 
             <Route path="/about" element={<AboutPage />} />
 
-            <Route path="/reserved" element={<Confirmation />} />
+            <Route path="/reservations/reserved" element={<Confirmation />} />
+
+            <Route path="/order-online" element={<Order />} />
         </Routes>
     )
 }

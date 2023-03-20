@@ -11,7 +11,7 @@ const Booking = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/reserved")
+    navigate("/reservations/reserved")
   }
 
   return (

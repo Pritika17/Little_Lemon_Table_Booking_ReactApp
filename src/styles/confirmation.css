@@ -54,3 +54,32 @@
   transform: translateY(-0.4em);
   transition: 0.3s;
 }
+
+@media (max-width: 680px) {
+    .confirmation div{
+        margin: 3rem 2rem;
+    }
+
+    .confirmation div p{
+        font-size: 2rem;
+        line-height: 3.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .confirmation div p{
+        line-height: 3rem;
+    }
+
+    .confirmation div h1{
+        font-size: 4rem;
+    }
+
+    .confirmation div button{
+        font-size: 2rem;
+    }
+
+    .confirmation div img{
+        width: 120px;
+    }
+}
