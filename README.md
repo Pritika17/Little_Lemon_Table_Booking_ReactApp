@@ -54,7 +54,7 @@
 To run this application on your local machine, you need to follow these steps:
 
 1. Clone the repository: `git clone` https://github.com/Pritika17/Little_Lemon_Table_Booking_ReactApp.git
-2. Navigate to the project directory: `cd restaurant-website`
+2. Navigate to the project directory
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your web browser and go to http://localhost:3000
