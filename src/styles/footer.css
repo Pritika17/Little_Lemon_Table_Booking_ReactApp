@@ -39,9 +39,15 @@ footer{
 .footer-links{
     height: 20rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     line-height: 3rem;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation ul li p:hover, #connect ul li p:hover{
