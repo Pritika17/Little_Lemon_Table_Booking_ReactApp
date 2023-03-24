@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
 }
 
-a {
+a{
   text-decoration: none;
 }
 
@@ -25,17 +25,15 @@ li {
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  position: sticky;
-  top: 0;
-  background-color: white;
   z-index: 1;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;;
 }
 
 .logo {
   display: grid;
   grid-column: 2/3;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -65,7 +63,7 @@ li {
   display: none;
 }
 
-.menu-link ul li a {
+.menu-link ul li p,a {
   display: inline-block;
   color: black;
   font-family: "Markazi Text";
@@ -73,13 +71,13 @@ li {
   font-weight: 600;
 }
 
-.menu-link ul li a:hover {
+.menu-link ul li a:hover, .menu-link ul li p:hover {
   scale: 1.05;
   border-bottom: solid 3px #f4ce14;
   transition: 0.2s linear;
 }
 
-.loginbutton li a {
+.loginbutton li p {
   display: inline-block;
   color: black;
   font-family: "Markazi Text";
@@ -90,7 +88,7 @@ li {
   border-radius: 16px;
 }
 
-.loginbutton li a:hover {
+.loginbutton li p:hover {
   box-shadow: 0 0.5em 0.5em -0.4em rgb(243, 225, 33);
   transform: translateY(-0.25em);
   transition: .3s;
@@ -143,7 +141,6 @@ li {
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    position: sticky;
   }
 
   .mobile-menu-link ul{
@@ -151,7 +148,7 @@ li {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .mobile-menu-link ul:first-child{
@@ -168,14 +165,13 @@ li {
   .loginbutton {
     height: 7rem;
     display: flex;
-    justify-self: end;
+    justify-self: flex-end;
     align-items: center;
   }
 
   .hamburger-menu{
     display: block;
     margin-left: 4rem;
-    z-index: 3;
   }
 }
 
@@ -190,14 +186,14 @@ li {
     height: 6rem;
   }
 
-  .loginbutton a img{
+  .loginbutton p img{
     width: 2.5rem;
   }
 
   .loginbutton{
     height: 6rem;
     display: flex;
-    justify-self: end;
+    justify-self: flex-end;
     align-items: center;
   }
 
@@ -224,17 +220,17 @@ li {
   .loginbutton{
     height: 6rem;
     display: flex;
-    justify-self: end;
+    justify-self: flex-end;
     align-items: center;
   }
 
-  .loginbutton ul li a{
+  .loginbutton ul li p{
     font-size: 2rem;
     position: relative;
     left: 2.3rem;
   }
 
-  .hamburger-menu a img{
+  .hamburger-menu p img{
     width: 2rem;
   }
 }

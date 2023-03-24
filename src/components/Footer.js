@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/footer.css"
 
 const Footer = () => {
@@ -11,18 +12,26 @@ const Footer = () => {
                 <div className="navigation">
                     <h2>Navigation</h2>
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Reservations</a>
-                        </li>
-                        <li>
-                            <a href="#">Order</a>
-                        </li>
+                        <Link to="/">
+                            <li>
+                                <p>Home</p>
+                            </li>
+                        </Link>
+                        <Link to="/about">
+                            <li>
+                                <p>About</p>
+                            </li>
+                        </Link>
+                        <Link to="/reservations">
+                            <li>
+                                <p>Reservations</p>
+                            </li>
+                        </Link>
+                        <Link to="/order-online">
+                            <li>
+                                <p>Order</p>
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>
@@ -32,7 +41,7 @@ const Footer = () => {
                     <p>2395 Maldove Way</p>
                     <p>Chicago Illinois</p>
                     <p>(629)-243-6827</p>
-                    <a href="#">info@littlelemon.com</a>
+                    <p>info@littlelemon.com</p>
                 </div>
             </div>
             <div className="footer-links" id="connect">
@@ -40,16 +49,16 @@ const Footer = () => {
                     <h2>Connect</h2>
                     <ul>
                         <li>
-                            <a href="#">Facebook</a>
+                            <p>Facebook</p>
                         </li>
                         <li>
-                            <a href="#">Instagram</a>
+                            <p>Instagram</p>
                         </li>
                         <li>
-                            <a href="#">Likedin</a>
+                            <p>Likedin</p>
                         </li>
                         <li>
-                            <a href="#">Join Us!</a>
+                            <p>Join Us!</p>
                         </li>
                     </ul>
                 </div>

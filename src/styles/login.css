@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+.login {
+  align-items: flex-start;
+  padding-top: 7rem;
+  justify-content: center;
+  background-image: url("../assets/lemon-back.jpg");
+  background-size: 140%;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+}
+
+.center {
+  background-color: #eee;
+  height: 390px;
+  width: 400px;
+  position: relative;
+  padding: 50px 50px;
+  background: hsla(0, 0%, 100%, 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 2rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 10px;
+}
+
+.center h1 {
+  font-size: 3em;
+  color: #000000;
+  margin: 0;
+  font-family: "Markazi Text";
+  font-weight: bold;
+  padding: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 35px;
+}
+
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-family: "Karla";
+  font-size: 1.7rem;
+  font-weight: 700;
+  transition: 0.6s;
+  color: #000000;
+}
+
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 2rem;
+}
+
+.center .inputbox [type="button"] {
+  width: 40%;
+  cursor: pointer;
+  background-color: #495e57;
+  color: #eee;
+  font-family: "Karla";
+  font-size: 2rem;
+  border: none;
+  padding: 1rem 2rem;
+  border: solid white 4px;
+}
+
+.center .inputbox .btn:hover {
+  box-shadow: 0 0.9em 0.9em -0.4em #495e57;
+  transform: translateY(-0.3em);
+  transition: 0.3s;
+  background-color: transparent;
+  color: black;
+  border: solid black 4px;
+}
+
+@media (max-width: 640px) {
+  .login {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .login {
+    padding: 6rem;
+  }
+
+  .center {
+    height: 390px;
+    width: 350px;
+    padding: 30px 30px;
+  }
+
+  .center .inputbox {
+    width: 250px;
+    height: 50px;
+  }
+
+  .center .inputbox [type="button"] {
+    width: 45%;
+  }
+}
+
+@media (max-width: 320px) {
+  .center {
+    height: 390px;
+    width: 250px;
+    padding: 30px 30px;
+  }
+
+  .center .inputbox{
+    width: 180px;
+  }
+
+  .center .inputbox [type="button"] {
+    width: 60%;
+  }
+}

@@ -17,37 +17,41 @@ const Nav = () => {
                 <ul>
                     <Link to="/">
                         <li>
-                            <a href="/">Home</a>
+                            <p>Home</p>
                         </li>
                     </Link>
                     <Link to="/about">
                         <li>
-                            <a href="#">About</a>
+                            <p>About</p>
                         </li>
                     </Link>
                     <li>
-                        <a href="#">Menu</a>
+                        <a href={require("../assets/Little_lemon_menu.png")} target="_blank" rel="noreferrer">Menu</a>
                     </li>
-                    <li>
-                        <a href="#">Reservations</a>
-                    </li>
+                    <Link to="/reservations">
+                        <li>
+                            <p>Reservations</p>
+                        </li>
+                    </Link>
                     <Link to="/order-online">
                         <li>
-                            <a href="#">Order</a>
+                            <p>Order</p>
                         </li>
                     </Link>
                 </ul>
             </div>
             <div className="loginbutton">
                 <ul>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
+                    <Link to="/login">
+                        <li>
+                            <p>Login</p>
+                        </li>
+                    </Link>
                 </ul>
                 <div className="hamburger-menu">
-                    <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                    <p onClick={() => setShowMediaIcons(!showMediaIcons)}>
                         <img src={require("../assets/menu-hamburger.png")} alt="" />
-                    </a>
+                    </p>
                 </div>
             </div>
         </nav>

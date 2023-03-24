@@ -90,8 +90,8 @@ html {
   height: 25rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 1rem;

@@ -12,10 +12,6 @@ html{
     font-size: 62.5%;
 }
 
-a{
-    text-decoration: none;
-}
-
 li{
     list-style: none;
 }
@@ -33,7 +29,7 @@ footer{
     height: 20rem;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .footer-logo img{
@@ -48,8 +44,10 @@ footer{
     line-height: 3rem;
 }
 
-a:hover{
+.navigation ul li p:hover, #connect ul li p:hover{
+    display: inline-block;
     border-bottom: solid 2px white;
+    cursor: pointer;
 }
 
 h2{
@@ -58,7 +56,6 @@ h2{
     font-size: 2.5rem;
 }
 
-a,
 p{
     color: white;
     font-family: "Karla";
