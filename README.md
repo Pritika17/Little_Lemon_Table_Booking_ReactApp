@@ -3,6 +3,9 @@
 ### This is a React-based website for a restaurant where customers can order food online and book a table for dining in. This project is from Frontend Capstone from coursera
 <br>
 
+# ✨ Deployed Link
+## [Little Lemon Restaurant](https://little-lemon-restaurant-xho1.onrender.com)
+
 # ✨Features
 1. A menu section where customers can browse through the dishes and add them to their cart.
 <br>
